@@ -29,3 +29,15 @@
   }
 
 
+  #trex {
+    position: absolute;
+    background: url(./sprites.png) no-repeat bottom;
+    width: 85px;
+    height: 95px;
+    background-position: -1338px 0px;
+    animation: trex-run 0.3s steps(5) infinite;
+    left: 50px;
+    bottom: 0;
+    z-index: 1;
+  }
+

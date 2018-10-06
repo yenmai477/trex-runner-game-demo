@@ -2,6 +2,8 @@ import './../src/style.css';
 import spriteFile from './sprites.png';
 import game from './game';
 import groundActivities from './groundActivities';
+import userActivities from './userActivities';
+import trexActivities from './trexActivities';
 
 (function() {
   document.getElementById('app').innerHTML = `
@@ -20,9 +22,11 @@ import groundActivities from './groundActivities';
   // element hiển thị thông tin game
   const $info = document.getElementById('info');
 
+  userActivities($trex, $ground);
 
   function gameStory() {
     groundActivities($ground);
+    trexActivities($trex);
   }
 
   function gameLoop() {
