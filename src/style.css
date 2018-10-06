@@ -1,0 +1,31 @@
+
+#app {
+    position: relative;
+    min-height: 200px;
+    /* căn giữa*/
+    top: 50%;
+    transform: translate(0,-50%);
+}
+
+
+#ground {
+    position: absolute;
+    bottom: 0;
+    background: url('sprites.png') repeat-x bottom;
+    min-height: 30px;
+    width: 100%;
+}
+
+#info {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    color: #535353;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    z-index: 2;
+    background: white;
+    font-size: 1em;
+    text-transform: uppercase;
+  }
+
+
