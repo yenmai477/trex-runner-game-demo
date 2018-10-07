@@ -23,7 +23,7 @@ export default {
     status: 'standing',
     speed: 8,
     // độ cao tối đa mà trex có thể nhảy
-    maxElevation: 200,
+    maxElevation: 160,
     // độ cao hiện tại của trex
     elevation: 0
   },

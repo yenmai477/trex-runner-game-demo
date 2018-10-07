@@ -41,3 +41,38 @@
     z-index: 1;
   }
 
+  #cactuses {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+  }
+  
+  .cactus {
+    position: absolute;
+    bottom: 0;
+  }
+  
+  .cactus div {
+    display: inline-block;
+    white-space: nowrap;
+    background: url(./sprites.png) no-repeat top;
+  }
+  
+  .cactus .small {
+    width: 35px;
+    height: 70px;
+    background-position-x: -445px;
+  }
+  
+  .cactus .big {
+    width: 50px;
+    height: 95px;
+    background-position-x: -650px;
+  }
+
+  @keyframes trex-run {
+    100% {
+      background-position-x: -1780px;
+    }
+  }

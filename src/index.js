@@ -3,6 +3,7 @@ import spriteFile from './sprites.png';
 import game from './game';
 import groundActivities from './groundActivities';
 import userActivities from './userActivities';
+import cactusActivities from './cactusActivities';
 import trexActivities from './trexActivities';
 
 (function() {
@@ -22,11 +23,19 @@ import trexActivities from './trexActivities';
   // element hiển thị thông tin game
   const $info = document.getElementById('info');
 
-  userActivities($trex, $ground);
+
+  // lấy kích thước của trex
+  const rect = $trex.getBoundingClientRect();
+  game.trex.left = rect.left;
+  game.trex.width = rect.width;
+  game.trex.height = rect.height;
+
+  userActivities($trex, $ground, $cactuses);
 
   function gameStory() {
     groundActivities($ground);
     trexActivities($trex);
+    cactusActivities($cactuses);
   }
 
   function gameLoop() {
